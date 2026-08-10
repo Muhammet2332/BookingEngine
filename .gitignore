@@ -1,2 +1,19 @@
-obj/
-bin/
+### JetBrains Rider / Visual Studio Code ###
+.idea/
+.vscode/
+
+### Visual Studio ###
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+### Компляция и сборка ###
+App_Data/
+    
+### Окружение и секреты ###
+*.env
+*.env.local

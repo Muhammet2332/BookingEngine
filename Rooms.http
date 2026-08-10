@@ -1,0 +1,32 @@
+@Host = http://localhost:5010
+
+###
+GET {{Host}}/rooms
+Accept: application/json
+
+###
+GET {{Host}}/rooms/1
+Accept: application/json
+
+### Добавить комнату
+POST {{Host}}/rooms
+Content-Type: application/json
+
+{
+  "number": "101-A",
+  "pricePerNight": 150.00,
+  "roomTypeId": 1
+}
+
+###
+PUT {{Host}}/rooms/1
+Content-Type: application/json
+
+{
+  "number": "101-A",
+  "pricePerNight": 149.99,
+  "roomTypeId": 1
+}
+
+###
+DELETE {{Host}}/rooms/2
