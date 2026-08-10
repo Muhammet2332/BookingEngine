@@ -1,0 +1,34 @@
+@BookingEngine_HostAddress = http://localhost:5010
+
+### GET All Bookings
+GET {{BookingEngine_HostAddress}}/bookings
+Accept: application/json
+
+### GET Booking by ID
+GET {{BookingEngine_HostAddress}}/bookings/1
+Accept: application/json
+
+### POST Create New Booking
+POST {{BookingEngine_HostAddress}}/bookings
+Content-Type: application/json
+
+{
+  "roomId": 1,
+  "CustomerName": "Roland",
+  "StartDate": "2026-09-01",
+  "EndDate": "2026-09-07"
+}
+
+###
+PUT {{BookingEngine_HostAddress}}/bookings/1
+Content-Type: application/json
+
+{
+  "roomId": 1,
+  "CustomerName": "Rolando",
+  "checkInDate": "2026-09-01",
+  "checkOutDate": "2026-09-07"
+}
+
+### DELETE Booking
+DELETE {{BookingEngine_HostAddress}}/bookings/4
