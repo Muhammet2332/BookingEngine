@@ -12,7 +12,7 @@ namespace BookingEngine.Mapping
                 RoomId = booking.RoomId,
                 CustomerName = booking.CustomerName,
                 StartDate = booking.StartDate,
-                EndDate = booking.EndDate,
+                EndDate = booking.EndDate
             };
         }
 

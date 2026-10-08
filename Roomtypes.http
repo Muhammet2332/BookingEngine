@@ -11,6 +11,7 @@ Accept: application/json
 ### 
 POST {{Host}}/room-types
 Content-Type: application/json
+Authorization: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkFTVVMiLCJzdWIiOiJBU1VTIiwianRpIjoiMzFlYTExNTIiLCJyb2xlIjoiQWRtaW4iLCJhdWQiOlsiaHR0cDovL2xvY2FsaG9zdDo0MTAyMCIsImh0dHBzOi8vbG9jYWxob3N0OjQ0Mzk0IiwiaHR0cDovL2xvY2FsaG9zdDo1MDEwIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NzEwMCJdLCJuYmYiOjE3ODYzMzkzMDIsImV4cCI6MTc5NDI4ODEwMiwiaWF0IjoxNzg2MzM5MzAzLCJpc3MiOiJkb3RuZXQtdXNlci1qd3RzIn0.GmpXSLimc4XE_Ikt0lWPY_5MmB8EsxzpG8xRzg9myYc
 
 {
   "name": "Ëþêñ 3 (Suite)",
@@ -20,6 +21,7 @@ Content-Type: application/json
 ### 
 PUT {{Host}}/room-types/1
 Content-Type: application/json
+Authorization: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkFTVVMiLCJzdWIiOiJBU1VTIiwianRpIjoiMzFlYTExNTIiLCJyb2xlIjoiQWRtaW4iLCJhdWQiOlsiaHR0cDovL2xvY2FsaG9zdDo0MTAyMCIsImh0dHBzOi8vbG9jYWxob3N0OjQ0Mzk0IiwiaHR0cDovL2xvY2FsaG9zdDo1MDEwIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NzEwMCJdLCJuYmYiOjE3ODYzMzkzMDIsImV4cCI6MTc5NDI4ODEwMiwiaWF0IjoxNzg2MzM5MzAzLCJpc3MiOiJkb3RuZXQtdXNlci1qd3RzIn0.GmpXSLimc4XE_Ikt0lWPY_5MmB8EsxzpG8xRzg9myYc
 
 {
   "name": "Double",
@@ -27,4 +29,5 @@ Content-Type: application/json
 }
 
 ###
-DELETE {{Host}}/room-types/3
+DELETE {{Host}}/room-types/4
+Authorization: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkFTVVMiLCJzdWIiOiJBU1VTIiwianRpIjoiMzFlYTExNTIiLCJyb2xlIjoiQWRtaW4iLCJhdWQiOlsiaHR0cDovL2xvY2FsaG9zdDo0MTAyMCIsImh0dHBzOi8vbG9jYWxob3N0OjQ0Mzk0IiwiaHR0cDovL2xvY2FsaG9zdDo1MDEwIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NzEwMCJdLCJuYmYiOjE3ODYzMzkzMDIsImV4cCI6MTc5NDI4ODEwMiwiaWF0IjoxNzg2MzM5MzAzLCJpc3MiOiJkb3RuZXQtdXNlci1qd3RzIn0.GmpXSLimc4XE_Ikt0lWPY_5MmB8EsxzpG8xRzg9myYc

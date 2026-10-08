@@ -34,7 +34,11 @@ namespace BookingEngine.Endpoints
                 dbContext.RoomTypes.Add(type);
                 await dbContext.SaveChangesAsync();
                 return Results.CreatedAtRoute(GetRoomTypeEndpointName, new { id = type.Id }, type.ToTypeDto());
-            });
+            })
+                 .RequireAuthorization(policy =>
+                 {
+                     policy.RequireRole("Admin");
+                 });
 
             // PUT /room-types/{id}
             group.MapPut("/{id}", async (int id, CreateRoomTypeDto updateRoomType, BookingDbContext dbContext) =>
@@ -47,7 +51,11 @@ namespace BookingEngine.Endpoints
                 await dbContext.SaveChangesAsync();
 
                 return Results.NoContent();
-            });
+            })
+                 .RequireAuthorization(policy =>
+                 {
+                     policy.RequireRole("Admin");
+                 });
 
             // DELETE /roomtypes/{id}
             group.MapDelete("/{id}", async (int id, BookingDbContext dbContext) =>
@@ -57,7 +65,11 @@ namespace BookingEngine.Endpoints
                                .ExecuteDeleteAsync();
 
                 return Results.NoContent();
-            });
+            })
+                 .RequireAuthorization(policy =>
+                 {
+                     policy.RequireRole("Admin");
+                 });
 
             return group;
         }
